@@ -1,2 +1,12 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: Edu NSW ACT Cursive;
+    src: url(assets/Fonts/EduNSWACTCursive-VariableFont_wght.ttf);
+}
+
+@theme{
+    --font-Custom-Text: Edu NSW ACT Cursive;
+}
+
 @plugin "daisyui";
