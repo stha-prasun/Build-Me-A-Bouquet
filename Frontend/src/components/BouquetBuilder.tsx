@@ -4,6 +4,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import SidebarItem, { type ItemType } from "./SidebarItem";
 import BouquetCanvas, { type CanvasItemType } from "./BouquetCanvas";
+import Fab from "./Fab";
 
 const BouquetBuilder: React.FC = () => {
   const [canvasItems, setCanvasItems] = useState<CanvasItemType[]>([]);
@@ -39,7 +40,11 @@ const BouquetBuilder: React.FC = () => {
           </div>
         </div>
 
-        <BouquetCanvas canvasItems={canvasItems} setCanvasItems={setCanvasItems} />
+        <BouquetCanvas
+          canvasItems={canvasItems}
+          setCanvasItems={setCanvasItems}
+        />
+        <Fab />
       </div>
     </DndProvider>
   );
